@@ -30,18 +30,18 @@
       <div class="container-narrow">
         <div class="header">
          <ul class="nav nav-pills pull-right">
-           <li <?php if ($_SERVER['PHP_SELF']==="/tmp/index.php") echo "class='active';"?>><a href="index.php">Home</a></li>
-           <li <?php if ($_SERVER['PHP_SELF']==="/tmp/about.php") echo "class='active';"?>><a href="about.php">About</a></li>
+           <li <?php if ($_SERVER['PHP_SELF']==="/index.php") echo "class='active';"?>><a href="index.php">Home</a></li>
+           <li <?php if ($_SERVER['PHP_SELF']==="/about.php") echo "class='active';"?>><a href="about.php">About</a></li>
            <?php
              if (isset($_SESSION["uid"])) {
 ?>  
-            <li <?php if ($_SERVER['PHP_SELF']==="/tmp/profile.php") echo "class='active';"?>><a href="profile.php">Profile</a></li>
+            <li <?php if ($_SERVER['PHP_SELF']==="/profile.php") echo "class='active';"?>><a href="profile.php">Profile</a></li>
            <li><a href="usrlogout.php">Logout</a></li>
            <?php 
              } else {
 ?>  
-            <li <?php if ($_SERVER['PHP_SELF']==="/tmp/register.php") echo "class='active';"?>><a href="register.php">Register</a></li>
-            <li <?php if ($_SERVER['PHP_SELF']==="/tmp/login.php") echo "class='active';"?>><a href="login.php">Login</a></li>
+            <li <?php if ($_SERVER['PHP_SELF']==="/register.php") echo "class='active';"?>><a href="register.php">Register</a></li>
+            <li <?php if ($_SERVER['PHP_SELF']==="/login.php") echo "class='active';"?>><a href="login.php">Login</a></li>
 <?php
               }
             ?>
