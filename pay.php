@@ -1,5 +1,5 @@
 <?php
-	//test
+	//tesst
 	include('header.php');
 	if (!isset($_SESSION["uid"])) {
 		header('Location: index.php');
